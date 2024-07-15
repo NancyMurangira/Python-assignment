@@ -1,3 +1,19 @@
 from django.db import models
 
-# Create your models here.
+
+class Student():
+    first_name = models.CharField(max_length= 20)
+    last_name = models.CharField(max_length = 20)
+    code = models.SmallIntegerField
+    email = models.CharField(max_length=20)
+    age = models.SmallIntegerField
+    country = models.CharField(max_length= 20)
+    bio = models.TextField
+    photo = models. ImageField
+
+def __str__(self):
+    f"{self.first_name} {self.last_name}"
+
+
+
+
