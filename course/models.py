@@ -1,9 +1,10 @@
 from django.db import models
 
-class Class():
+
+class Course(models.Model):
     course_name=models.CharField(max_length=20)
     course_code=models.CharField(max_length=20)
-    description =models.CharField(max_length=20)
+    description =models.TextField()
     max_capacity = models.SmallIntegerField
     department = models.CharField(max_length=20)
     trainer = models.CharField(max_length = 20)
